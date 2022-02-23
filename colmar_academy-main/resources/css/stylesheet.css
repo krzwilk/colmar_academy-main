@@ -6,12 +6,11 @@ body{
     width: 100%;
     box-sizing: border-box;
     border: 1px solid;
-    border-color: red;
+    border-color: rgb(53, 209, 74);
     margin:0;
 }
-main{
-    /*width: 100%;*/
-
+div{
+    border: 1px solid rgb(221, 16, 33);
 }
 /*html, body{
     box-sizing: border-box;*/
@@ -86,7 +85,10 @@ li{
     align-items:left;
     align-items: flex-end;
 }
-
+main{
+    border:1px solid rgb(61, 61, 61);
+    padding-right: 2px;
+}
 
 .benner-article{
     box-sizing:border-box;
@@ -150,6 +152,7 @@ button{
     margin-right: 1.5rem;
 }
 h2{
+    width:inherit;
     margin: 2rem 1.5rem 1.5rem;
     text-align: center;
     font-size: 2.5rem;
@@ -210,7 +213,12 @@ h3{
     justify-content:space-around;
 }
 .title1{
-    margin: 2rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    width: 100%;
+}
+.title1,h2{
+    margin: 0;
     width: 100%;
 }
 .start-learning-container{ 
@@ -219,7 +227,8 @@ h3{
     width:100%;
     }
 .corses-container{
-    margin: 32px 72px;
+    margin: 0px 72px;
+    padding-bottom: 2rem;
     /*text-align: center;
     width: 100%;
     display: flex;
@@ -233,9 +242,11 @@ h3{
 }
 .learning-container1{
     display: flex;
+    justify-content:space-between;
 }
 .learning-container2{
     display: flex;
+    justify-content:space-between;
 }
 .software, .computer-art, .design, .data, .business, .marketing{
     width:30%;
@@ -245,6 +256,11 @@ h3{
 }
 h5{
     margin:8px;
+}
+.exhibit-title{
+    box-sizing:border-box;
+    margin: 2rem 0rem 2rem 0rem;
+    width: 100%;
 }
 .exhibit-contaniner{
     display: flex;
@@ -269,24 +285,23 @@ object-fit: cover;
 {
     width: 60%;
     margin-right:1,5rem;
-    margin-top: 2rem;
 }
 video{
     max-width: 100%;
 }
 .exhibitsub2{
+    margin-left: 1.5rem;
     width:40%;
 }
 .container-fisma{
     width: 100%;
-    margin: 2rem 0rem;
     background-color:rgb(189, 186, 186);
-    margin-top: 2rem;
     display:flex;
     flex-direction: row;
 
 }
 .img-fisma{
+    width:35%;
     box-sizing: content-box;
     max-width:100%;
     height: auto;
@@ -309,6 +324,7 @@ video{
 }
 footer{
     margin-left: 1.5rem;
+    justify-content:space-between;
 }
 @media  (max-width: 940px) {
     html{
@@ -338,12 +354,16 @@ footer{
         min-width: 240px;
         margin: 0 auto;
     }
+    .benner-image{
+        max-width:100%;
+        padding: 0;
+    }
     .information-container{
         display: none;
     }
     .info-img{
         max-width:100%;
-        min-width: 200px;
+        /*min-width: 200px;*/
         height: auto;
         margin: 1rem;
     }
@@ -394,6 +414,9 @@ footer{
         display: line;
         margin-top: 2rem;
     }
+    .footer-desktop{
+        display: none;
+    }
 }
 @media   (min-width:940px) {
     .menue-bar-mobile{
@@ -411,14 +434,7 @@ footer{
     hr{
         display: none;
     }
-    /*.information-container-info{
-        flex-direction:column;
+    footer{
+        display: flex;
     }
-    Benner article
-}
-video{
-    width: fit-content;
-    height: auto;
-    
-    
-}*/
+   
