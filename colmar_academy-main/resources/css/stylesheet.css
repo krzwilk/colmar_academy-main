@@ -284,6 +284,7 @@ object-fit: cover;
 .exhibitsub1
 {
     width: 60%;
+    margin-left: 1.5rem;
     margin-right:1,5rem;
 }
 video{
@@ -322,8 +323,14 @@ video{
     align-items:center;
     justify-content:center;
 }
+.container-urban{
+    margin-left:1.5rem;
+}
 footer{
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding:0.5rem;
     justify-content:space-between;
 }
 @media  (max-width: 940px) {
