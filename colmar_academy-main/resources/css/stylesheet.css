@@ -417,6 +417,9 @@ footer{
     .footer-desktop{
         display: none;
     }
+    .container-urban{
+        display: none;
+    }
 }
 @media   (min-width:940px) {
     .menue-bar-mobile{
