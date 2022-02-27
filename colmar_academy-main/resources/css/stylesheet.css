@@ -118,12 +118,15 @@ main{
     display: flex;
     flex-direction:column;
     text-align: left;
+    justify-content: center;
 
     } 
     h1{
         margin-top:5rem;
-        font-size: 3.5rem;
-        font-weight:700;
+        font-family: sans-serif, copperplate, arial;
+        font-size: 4em;
+        font-weight:bolder;
+        
     }
 .article p{
     font-size:1.2rem;
@@ -132,8 +135,8 @@ main{
 
 button{
     width:100%;
-    font-size: 1.0rem;
-    padding:.5rem;
+    font-size: 1.5em;
+    padding:.5em;
     background-color:black;
     color:white;
 }
@@ -147,22 +150,21 @@ button{
 }
 .imag-main{ 
     width: 95%;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin: 2rem 1.5rem;    
+}
+.info-text-main{
+    margin:0;
+    padding-left: 1.5rem;
+    align-items:left;
 }
 h2{
     width:inherit;
     margin: 2rem 1.5rem 1.5rem;
-    text-align: center;
     font-size: 2.5rem;
 }
-.information-paragraf{
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
-
-}
+/*.information-paragraf{   
+margin:1.5rem, 1.5rem, 2rem, 1.5rem;
+}*/
 .information-container-info{
     display: table;
     flex-direction: column;
@@ -195,27 +197,33 @@ h3{
     margin-top: 2rem;
     width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:flex-start;
+    align-items:center;
 }
 .campus-container{
     width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:flex-start;
+    align-items:center;
 }
 .info-text{
-    align-items:center;
+   /* align-items:center;*/
     margin: 1rem;
+    justify-content: left;
 }
 .guest-container{
     display: flex;
     background-color:gray;
     margin-left: 1rem;
-    justify-content:space-around;
+    justify-content:flex-start;
+    align-items:center;
+    margin-bottom: 2rem;
 }
 .title1{
     box-sizing: border-box;
     padding: 2rem;
     width: 100%;
+    text-align:center;
 }
 .title1,h2{
     margin: 0;
@@ -394,9 +402,6 @@ footer{
     .corses-container{
         display: none;
     }
-    hr{
-        margin-top:32px;
-    }
     .title1{
         margin-top: 32px;
         text-align: center;
@@ -440,9 +445,6 @@ footer{
     }
     .exibit-contanier-mobile{
         display:none;
-    }
-    hr{
-        display: none;
     }
     footer{
         display: flex;
