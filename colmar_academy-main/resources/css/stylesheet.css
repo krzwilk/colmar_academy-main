@@ -239,6 +239,7 @@ h5{
     box-sizing:border-box;
     margin: 2rem 0rem 2rem 0rem;
     width: 100%;
+    text-align: center;
 }
 .exhibit-contaniner{
     display: flex;
